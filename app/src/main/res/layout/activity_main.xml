@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#dbe4ea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.felipe.lottieprueba.MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="gears.json"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_loop="true"
+        android:layout_below="@+id/com"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+    <ImageView
+        android:id="@+id/tres"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/tercer"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/com"
+        android:layout_alignStart="@+id/com" />
+
+    <TextView
+        android:id="@+id/con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/congreso"
+        android:textColor="#637dbf"
+        android:textSize="24sp"
+        android:layout_marginTop="17dp"
+        android:layout_alignTop="@+id/tres"
+        android:layout_toRightOf="@+id/tres"
+        android:layout_toEndOf="@+id/tres" />
+
+    <TextView
+        android:id="@+id/and"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/andino"
+        android:textColor="#5943c7"
+        android:textSize="50sp"
+        android:layout_above="@+id/com"
+        android:layout_alignRight="@+id/com"
+        android:layout_alignEnd="@+id/com"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5943c7"
+        android:gravity="center"
+        android:text="@string/comput"
+        android:textSize="15sp"
+        android:layout_below="@+id/tres"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/mariana"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/mariana"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/cesmag"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mariana"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        app:srcCompat="@drawable/cesmag" />
+
+    <ImageView
+        android:id="@+id/udenar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/mariana"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@drawable/udenar" />
+
+</RelativeLayout>
